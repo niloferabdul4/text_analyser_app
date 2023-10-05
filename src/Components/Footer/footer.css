@@ -1,0 +1,41 @@
+
+.footer {
+  padding: 1em;
+  background-color: white;
+  border-top:0.5px solid lightgrey;
+  bottom: 0;
+  position:fixed;
+  width: 100%;
+}
+  .footer-elements
+   {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+ p {
+    
+      font-size: 1.2rem;
+      font-weight: 500;
+    
+    }
+    .other-pages {
+      display: flex;
+      flex-direction: row;
+    }
+      .other-pages>li {
+        
+        font-size: 1.3rem;
+        font-weight: 500;
+        margin-left: 20px;
+        position: relative;
+        cursor: pointer;
+        list-style: none;
+      }
+        &:not(:last-child):after {
+          content: '|';
+          position: absolute;
+          width: 1px;
+          height: 100%;
+          right: -10px;
+        }
