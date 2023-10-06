@@ -1,15 +1,24 @@
 import React, { useState } from 'react'
-import Modal from 'react-responsive-modal'
-import 'react-responsive-modal/styles.css';
 
+import 'react-responsive-modal/styles.css';
+import Topbar from './topbar';
+import Textarea from './textarea';
+import Bottombar from './bottombar';
+import './main.css'
 const Main = () => {
-    const [open,setOpen]=useState(true)
+  
+  
   return (
-    <div>
-      <Modal open={open} center onClose={()=>setOpen(open=>!open)}>
-        
-      </Modal>
-    </div>
+    <>
+      <div className='main-container'>   
+          <div className='small-container'>            
+              <Topbar/>
+              <Textarea  />
+              <Bottombar/>     
+            </div>     
+             
+      </div>
+    </>
   )
 }
 
